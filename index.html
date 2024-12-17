@@ -1,0 +1,12 @@
+<label for="colorPicker">Choose a color:</label>
+<input type="color" id="colorPicker" name="color">
+<p id="colorValue"></p>
+
+<script>
+  const colorPicker = document.getElementById("colorPicker");
+  const colorValue = document.getElementById("colorValue");
+
+  colorPicker.addEventListener("input", function() {
+    colorValue.textContent = "Selected color: " + colorPicker.value;
+  });
+</script>
